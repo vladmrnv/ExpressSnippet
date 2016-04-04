@@ -1,13 +1,42 @@
-# README
-## This is the README for your extension "expresssnippet"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# ExpressSnippet
+A collection of snippets for Express.js
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+To initiate just type out express commands and the rest will be autocompleted.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+![](http://i.imgur.com/1pATOUW.gif)
 
-**Enjoy!**
+# Snippets
+Command | Description
+---|---
+app.get|Express GET request
+app.post|Express POST request
+app.put|Express PUT request
+app.delete|Express DELETE request
+res.send|Express RESPONSE object
+
+## Links
+[Github](https://github.com/vladmrnv/ExpressSnippet)
+[VS Code](https://marketplace.visualstudio.com/items?itemName=vladmrnv.expresssnippet)
+
+## License
+MIT License
+
+Copyright (c) [2016] [Vlad Marinov]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
