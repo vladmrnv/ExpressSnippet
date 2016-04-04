@@ -1,0 +1,37 @@
+{
+    "app.get": {
+        "prefix": "app.get",
+        "body": [
+            "app.get('$1', ${2:function(req, res)} {\n\t${3}\n});"
+        ],
+        "description": "Express GET request"
+    },
+    "app.post": {
+        "prefix": "app.post",
+        "body": [
+            "app.post('$1', ${2:function(req, res)} {\n\t${3}\n});"
+        ],
+        "description": "Express POST request"
+    },
+    "app.put": {
+        "prefix": "app.put",
+        "body": [
+            "app.put('$1', ${2:function(req, res)} {\n\t${3}\n});"
+        ],
+        "description": "Express PUT request"
+    },
+    "app.delete": {
+        "prefix": "app.delete",
+        "body": [
+            "app.delete('$1', ${2:function(req, res)} {\n\t${3}\n});"
+        ],
+        "description": "Express DELETE request"
+    },
+    "res.send": {
+        "prefix": "res.send",
+        "body": [
+            "res.send($1);"
+        ],
+        "description": "Express RESPONSE object"
+    }
+}
