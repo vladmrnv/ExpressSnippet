@@ -2,8 +2,14 @@
     "name": "expresssnippet",
     "displayName": "ExpressSnippet",
     "description": "Express Snippets for VS Code",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "publisher": "vladmrnv",
+    "homepage": "https://github.com/vladmrnv/ExpressSnippet",
+    "icon": "images/icon.svg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vladmrnv/ExpressSnippet"
+    },
     "engines": {
         "vscode": "^0.10.10"
     },
@@ -15,10 +21,12 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "snippets": [{
-            "language": "javascript",
-            "path": "./snippets/javascript.json"
-        }]
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
