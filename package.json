@@ -2,7 +2,7 @@
     "name": "expresssnippet",
     "displayName": "ExpressSnippet",
     "description": "Express Snippets for VS Code",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "vladmrnv",
     "homepage": "https://github.com/vladmrnv/ExpressSnippet",
     "icon": "images/icon.svg",
