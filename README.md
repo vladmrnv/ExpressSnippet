@@ -3,15 +3,26 @@ A collection of snippets for Express.js
 
 To initiate just type out express commands and the rest will be autocompleted.
 
+**Work In Progress**
+
 ![](http://i.imgur.com/1pATOUW.gif)
 
 # Snippets
 Command | Description
 ---|---
+app.all|This method is like the standard app.METHOD() methods, except it matches all HTTP verbs.
+app.disable|Sets the Boolean setting name to false, where name is one of the properties from the app settings table.
+app.disabled|Returns true if the Boolean setting name is disabled (false), where name is one of the properties from the app settings table.
 app.get|Express GET request
+app.listen|Binds and listens for connections on the specified host and port. This method is identical to Node's http.Server.listen().
+app.param|Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function.
 app.post|Express POST request
 app.put|Express PUT request
 app.delete|Express DELETE request
+app.render|Returns the rendered HTML of a view via the callback function. It accepts an optional parameter that is an object containing local variables for the view.
+app.route|Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware. Use app.route() to avoid duplicate route names (and thus typo errors).
+app.set|Assigns setting name to value, where name is one of the properties from the app settings table.
+app.use|Mounts the specified middleware function or functions at the specified path. If path is not specified, it defaults to “/”.
 res.send|Express RESPONSE object
 
 ## Links

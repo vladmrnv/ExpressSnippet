@@ -1,31 +1,122 @@
 {
+    "app.all": {
+        "prefix": "app.all",
+        "body": [
+            "app.all(${1:'*'}, ${2:requireAuthentication}, ${3:loadUser});"
+        ],
+        "description": "This method is like the standard app.METHOD() methods, except it matches all HTTP verbs."
+    },
+    "app.disable": {
+        "prefix": "app.disable",
+        "body": [
+            "app.disable('${1}');"
+        ],
+        "description": "Sets the Boolean setting name to false, where name is one of the properties from the app settings table. Calling app.set('foo', false) for a Boolean property is the same as calling app.disable('foo')."
+    },
+    "app.disabled": {
+        "prefix": "app.disabled",
+        "body": [
+            "app.disabled('${1}');"
+        ],
+        "description": "Sets the Boolean setting name to false, where name is one of the properties from the app settings table."
+    },
+    "app.enable": {
+        "prefix": "app.enable",
+        "body": [
+           "app.enable('${1}');"
+        ],
+        "description": "Sets the Boolean setting name to true, where name is one of the properties from the app settings table."
+    },
+    "app.enabled": {
+        "prefix": "app.enabled",
+        "body": [
+            "app.enabled('${1}');"
+        ],
+        "description": "Returns true if the setting name is enabled (true), where name is one of the properties from the app settings table."
+    },
+    "app.engine": {
+        "prefix": "app.engine",
+        "body": [
+            "app.engine('${1}', ${2});"
+        ],
+        "description": "Registers the given template engine callback as ext."
+    },
     "app.get": {
         "prefix": "app.get",
         "body": [
             "app.get('$1', ${2:function(req, res)} {\n\t${3}\n});"
         ],
-        "description": "Express GET request"
+        "description": "Routes HTTP GET request to the specifed path with the specified callback functions."
+    },
+    "app.listen": {
+        "prefix": "app.listen",
+        "body": [
+            "app.listen(${1:3000}, function($2) {\n\t${3:console.log('App listening on port 3000!')};\n});"
+        ],
+        "description": "Binds and listens for connections on the specified host and port. This method is identical to Node's http.Server.listen()."
+    },
+    "app.param": {
+        "prefix": "app.param",
+        "body": [
+            "app.param('${1}', function(${2:req, res, next, id}) {\n\t$3\n});"
+        ],
+        "description": "Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function. The parameters of the callback function are the request object, the response object, the next middleware, the value of the parameter and the name of the parameter, in that order."
     },
     "app.post": {
         "prefix": "app.post",
         "body": [
             "app.post('$1', ${2:function(req, res)} {\n\t${3}\n});"
         ],
-        "description": "Express POST request"
+        "description": "Routes HTTP POST requests to the specified path with the specified callback functions."
+    },
+    "app.path": {
+        "prefix": "app.path",
+        "body": [
+            "app.path();"
+        ],
+        "description": "Returns the canonical path of the app, a string."
     },
     "app.put": {
         "prefix": "app.put",
         "body": [
             "app.put('$1', ${2:function(req, res)} {\n\t${3}\n});"
         ],
-        "description": "Express PUT request"
+        "description": "Routes HTTP PUT requests to the specified path with the specified callback functions."
     },
     "app.delete": {
         "prefix": "app.delete",
         "body": [
             "app.delete('$1', ${2:function(req, res)} {\n\t${3}\n});"
         ],
-        "description": "Express DELETE request"
+        "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
+    },
+    "app.render": {
+        "prefix": "app.render",
+        "body": [
+            "app.render('${1}', function(${2:err}) {\n\t$3\n});"
+        ],
+        "description": "Returns the rendered HTML of a view via the callback function. It accepts an optional parameter that is an object containing local variables for the view."
+    },
+    "app.route": {
+        "prefix": "app.route",
+        "body": [
+            "app.route('${1:/}')"
+        ],
+        "description": "Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware. Use app.route() to avoid duplicate route names (and thus typo errors)."
+    },
+    "app.set": {
+        "prefix": "app.set",
+        "body": [
+            "app.set('${1:name}', '${2:value}');"
+        ],
+        "description": "Assigns setting name to value, where name is one of the properties from the app settings table."
+    },
+    "app.use": {
+        "prefix": "app.use",
+        "body": [
+            "app.use('/${1:path}', function(${2:req, res, next}) {\n\t$3\n});"
+        ],
+        "description": "Mounts the specified middleware function or functions at the specified path. If path is not specified, it defaults to “/”."
     },
     "res.send": {
         "prefix": "res.send",
