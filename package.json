@@ -2,7 +2,7 @@
     "name": "expresssnippet",
     "displayName": "ExpressSnippet",
     "description": "Express Snippets for VS Code",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "vladmrnv",
     "homepage": "https://github.com/vladmrnv/ExpressSnippet",
     "icon": "images/icon.svg",
@@ -31,7 +31,7 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/javascript.json"
+                "path": "./snippets/express.json"
             }
         ]
     },
