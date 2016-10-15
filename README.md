@@ -1,5 +1,5 @@
 # ExpressSnippet
-A collection of snippets for Express.js
+A collection of snippets for Express.js (https://github.com/expressjs)
 
 To initiate just type out express commands and the rest will be autocompleted.
 
