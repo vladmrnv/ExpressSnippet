@@ -62,6 +62,13 @@
         ],
         "description": "Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function. The parameters of the callback function are the request object, the response object, the next middleware, the value of the parameter and the name of the parameter, in that order."
     },
+    "app.patch": {
+        "prefix": "app.patch",
+        "body": [
+            "app.patch('$1', ${2:function(req, res)} {\n\t${3}\n});"
+        ],
+        "description": "Routes HTTP PATCH request to the specifed path with the specified callback functions."
+    },
     "app.post": {
         "prefix": "app.post",
         "body": [
