@@ -16,6 +16,7 @@ app.disabled|Returns true if the Boolean setting name is disabled (false), where
 app.get|Express GET request
 app.listen|Binds and listens for connections on the specified host and port. This method is identical to Node's http.Server.listen().
 app.param|Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function.
+app.patch|Routes HTTP PATCH request to the specifed path with the specified callback functions.
 app.post|Express POST request
 app.put|Express PUT request
 app.delete|Express DELETE request
