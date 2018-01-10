@@ -2,7 +2,7 @@
     "name": "expresssnippet",
     "displayName": "ExpressSnippet",
     "description": "Express Snippets for VS Code",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "vladmrnv",
     "homepage": "https://github.com/vladmrnv/ExpressSnippet",
     "icon": "images/icon.png",
@@ -10,6 +10,9 @@
         "type": "git",
         "url": "https://github.com/vladmrnv/ExpressSnippet"
     },
+    "bugs": {
+		"url": "https://github.com/vladmrnv/ExpressSnippet/issues"
+	},
     "license": "MIT",
     "keywords": [
         "Javascript",
