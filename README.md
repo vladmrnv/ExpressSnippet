@@ -5,6 +5,11 @@ To initiate just type out express commands and the rest will be autocompleted.
 
 **Work In Progress**
 
+# Special Thanks To
+* Matt Gabor / mattgabor - README changes
+* Travis / mallek - Added snippets
+* André Santos / dexfs - Added ES6 snippet support
+
 ![](http://i.imgur.com/1pATOUW.gif)
 
 # Snippets
